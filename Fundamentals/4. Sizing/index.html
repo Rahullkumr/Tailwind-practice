@@ -8,29 +8,133 @@
     <title>Sizing</title>
   </head>
   <body class="p-20">
-    <!-- Width -->
+
+    <h1 class="text-center font-bold text-2xl mb-5">4. Sizing (Width & Height)</h1>
+
+    <!-- 1. Width -->
     <!-- https://tailwindcss.com/docs/width -->
 
-    <!-- Percentages -->
+    <h1>1. Width using numbers (like w-1 for 4px)</h1>
+    <div class="container bg-teal-300 p-1 mb-10">
+      <div class="m-1 bg-red-200 w-0">0</div>     <!-- (w-0 == 0px) -->
+      <div class="m-1 bg-red-200 w-1">1</div>     <!-- (w-1 == 4px) -->
+      <div class="m-1 bg-red-200 w-1.5">1.5</div> <!-- (w-1.5 == 6px) -->
+      <div class="m-1 bg-red-200 w-2">2</div>     <!-- (w-2 == 8px) -->
+      <div class="m-1 bg-red-200 w-4">4</div>     <!-- (w-4 == 16px) -->
+      <div class="m-1 bg-red-200 w-16">w-16</div>   <!-- (w-16 == 64px) -->
+    </div>
 
-    <!-- Max Width -->
+
+
+
+
+    <!-- 2. Percentages -->
+
+    <h1>2. Percentage (like w-1/2 for 50%)</h1>
+    <div class="container bg-indigo-300 p-1 mb-10">
+      <div class="m-2 bg-green-200 w-full">w-full == 100%</div>    
+      <div class="m-2 bg-green-200 w-1/2">w-1/2 == 50%</div>    
+      <div class="m-2 bg-green-200 w-1/3">w-1/3 == 33.333%</div>    
+      <div class="m-2 bg-green-200 w-2/4">w-2/4 == 50%</div>    
+      <div class="m-2 bg-green-200 w-3/4">w-3/4 == 75%</div>    
+    </div>
+
+
+
+
+
+    <!-- 3. Max Width -->
     <!-- https://tailwindcss.com/docs/max-width -->
 
-    <!-- Width of the viewport -->
-    <!-- 100% of container -->
-    <!-- Arbitrary Width -->
+    <h1>3. Max width (max-w-lg == 512px)</h1>
+    <div class="bg-yellow-100 p-10 mb-10 max-w-lg">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sapiente neque tempore odio rerum! Vero eveniet fuga iure laborum quas quisquam aliquid, ex animi sequi tenetur, ab vitae, doloremque nemo sit cum eum! Maxime animi ea excepturi repellendus, illo magni deleniti eius aut reiciendis numquam minus eligendi quo repudiandae id non magnam cumque molestiae. Obcaecati iste amet ducimus dolorem ipsum incidunt! Pariatur eos numquam, a soluta at autem assumenda fugit veniam aliquid cum iusto adipisci? Consectetur non corrupti reiciendis perspiciatis modi adipisci quae! Quis praesentium nisi omnis, illo possimus, vero quia dignissimos deleniti repudiandae, libero corrupti. Unde magni quidem accusantium.  
+    </div>
 
-    <!-- Height (Most of the same options as widths) -->
+
+
+
+
+    <!-- 4. Width of the viewport -->
+
+    <h1>4. VW & Width 100%</h1>
+    <div class="bg-green-500 my-2 p-5 w-screen">w-screen == width: 100vw;</div>
+    <div class="bg-green-500 my-2 p-5 w-full">w-full == width: 100%</div>
+    
+
+
+
+
+    <!-- 5. Arbitrary Width -->
+
+    <h1 class="mt-10">5. Arbitrary Width</h1>
+    <div class="bg-teal-500 my-2 p-5 w-[500px]">Arbitrary Width w-[500px]</div>
+
+
+
+
+
+    <!-- 6. Width Auto -->
+
+    <h1 class="mt-10">6. Width Auto</h1>
+     <div class="bg-sky-200 p-10 my-2 w-auto">w-auto (Width Auto)</div>
+
+
+
+
+
+    <hr><hr><hr>
+    <!-- 7. Height (same as widths) -->
     <!-- https://tailwindcss.com/docs/height -->
 
-    <!-- Min Height -->
+     <h1 class="mt-10">7. Height</h1>
+     <div class="flex bg-gray-200 item-end mb-10">
+      <div class="bg-indigo-400 ml-5 h-16 p-2">h-16</div>
+      <div class="bg-indigo-400 ml-5 h-24 p-2">h-24</div>
+      <div class="bg-indigo-400 ml-5 h-32 p-2">h-32</div>
+      <div class="bg-indigo-400 ml-5 h-40 p-2">h-40</div>
+      <div class="bg-indigo-400 ml-5 h-[3in] p-2">Arbitrary height h-[3in]</div>
+     </div>
+
+
+
+
+
+    <!-- 8. Min Height -->
     <!-- https://tailwindcss.com/docs/min-height -->
 
-    <!-- Max Height -->
+     <h1 class="mt-10">8. Min Height Full (min-height: 100%;)</h1>
+     <div class="p-5 bg-green-300 h-[200px]">
+      <div class="bg-lime-300 min-h-full w-2/5">min-h-full (first remove padding from parent to see effect)</div>
+     </div>
+
+
+
+
+
+    <!-- 9. Max Height -->
     <!-- https://tailwindcss.com/docs/max-height -->
 
-    <!-- Full screen height -->
+    <h1 class="mt-10">9. Max Height Full (max-height: 100%;)</h1>
+    <div class="bg-yellow-500 h-[200px] px-10">
+     <div class="bg-orange-400 h-full max-h-full">h-full max-h-full</div>
+    </div>
 
-    <!-- Width Auto -->
+
+
+
+
+    <!-- 10. Full screen height -->
+
+    <h1 class="mt-10">10. Full screen height(max-height: 100%;)</h1>
+    <div class="bg-black text-white h-screen">h-screen (height: 100vh;)</div>
+
+
+
+     <!-- Navigation -->
+
+    <div style="text-align: center; border: none;" class="mt-10">
+      <a href="../3. Typography/index.html" style="border: 1px solid;padding: 10px;">⬅️</a>
+      <a href="../5. Layout Position/index.html" style="border: 1px solid;padding: 10px;">➡️</a>
   </body>
 </html>
