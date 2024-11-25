@@ -8,7 +8,48 @@
     <title>TailwindCSS</title>
   </head>
   <body class="p-20">
-    <!-- https://tailwindcss.com/docs/position -->
-    <!-- https://tailwindcss.com/docs/display -->
+
+    <h1 class="text-center font-bold text-2xl mb-5">5. Position & Display</h1>
+
+    <!-- 1. Position (static, fixed, absolute, relative, sticky) -->
+      <!-- https://tailwindcss.com/docs/position -->
+
+      <h1>1. Position (Static, Sticky, Fixed, relative and absolute)</h1>
+      <div class="p-5 bg-teal-500 mb-10 static">static (default value)</div>
+      <div class="p-5 bg-blue-300 mb-10 sticky top-0">sticky top-0 (when page scrolls and reaches here, it sticks at top-0)</div>
+      <div class="p-5 bg-orange-500 fixed right-0 bottom-0">fixed right-0 bottom-0</div>
+      <!-- refer `webtech` repository for proper understanding -->
+      <div class="mb-10 bg-violet-900 h-[200px] text-white"> Parent
+        <div class="bg-yellow-100 h-[50px] w-[300px] m-1 text-black static left-5">static left-5</div>
+        <div class="bg-indigo-300 h-[50px] w-[300px] m-1 relative left-5">relative left-5</div>
+        <div class="bg-red-300 h-[50px] m-1 absolute left-5">absolute left-5 (since parent has default position (i.e static), will refer from html)</div>
+      </div>
+
+
+
+
+
+    <!-- 2. Display (block) -->
+      <!-- https://tailwindcss.com/docs/display -->
+
+      <h1>2. Display (inline, inline-block, block)</h1>
+      <div class="bg-teal-400 p-5 mb-10 ">
+        <span class="p-2 my-2 bg-red-300 inline w-1/2">inline w-1/2</span>
+        <span class="p-2 my-2 bg-green-300 inline-block w-1/2">inline-block w-1/2</span>
+        <span class="p-2 my-2 bg-blue-300 block w-1/2">block w-1/2</span>
+        <span class="p-2 my-2 bg-blue-300 hidden w-1/2">hidden w-1/2</span>hidden
+      </div>
+
+      <div class="h-screen"></div>  <!-- to make the screen scrollable 100vh -->
+
+
+
+
+      
+    <!-- Navigation -->
+
+    <div class="mt-10 fixed bottom-3 left-[50%]">
+      <a href="../4. Sizing/index.html" style="border: 1px solid;padding: 10px;">⬅️</a>
+      <a href="../6. Backgrounds Shadows/index.html" style="border: 1px solid;padding: 10px;">➡️</a>
   </body>
 </html>
