@@ -7,21 +7,56 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Backgrounds & Shadows</title>
   </head>
-  <body>
+  <body class="p-20">
+
+    <h1 class="text-center font-bold text-2xl mb-5">6. Background, Shadow & Gradient</h1>
+
     <!-- Background Images -->
-    <!-- https://tailwindcss.com/docs/background-image -->
+      <!-- https://tailwindcss.com/docs/background-image -->
+
+      <h1>1. Background image related classes (like bg-cover, bg-center)</h1>
+      <div 
+        style="background-image: url('./gb.jpeg');" 
+        class="h-screen bg-no-repeat bg-center bg-cover">
+      </div>
+
+
+
+
 
     <!-- Shadows -->
-    <!-- https://tailwindcss.com/docs/drop-shadow -->
-    <!-- I know we didn't cover flexbox, but it's just for demo purposes -->
+      <!-- https://tailwindcss.com/docs/drop-shadow -->
+
+      <h1 class=" mt-10">2. Shadow related classes</h1>
+      <div class="flex flex-wrap">
+        <div class='p-4 ml-5 my-5 w-[350px] shadow-md'>shadow-md</div>
+        <div class='p-4 ml-5 my-5 w-[350px] shadow-lg'>shadow-lg</div>
+        <div class='p-4 ml-5 my-5 w-[350px] shadow-xl'>shadow-xl</div>
+        <div class='p-4 ml-5 my-5 w-[350px] shadow-2xl'>shadow-2xl</div>
+        <div class='p-4 ml-5 my-5 w-[350px] shadow-inner'>shadow-inner</div>
+        <div class='p-4 ml-5 my-5 w-[350px] shadow-lg shadow-teal-300'>shadow-teal-300</div>
+        <div class='p-4 ml-5 my-5 w-[350px] shadow-lg shadow-red-300/30'>shadow-red-300/30 (opacity)</div>
+      </div>
+
+
+
+
 
     <!-- Gradients -->
-    <!-- https://tailwindcss.com/docs/gradient-color-stops -->
+      <!-- https://tailwindcss.com/docs/gradient-color-stops -->
 
-
-
+      <h1 class=" mt-10">3. Gradient related classes</h1>
+      <div class="h-40 bg-gradient-to-r from-red-100 to-red-400 text-center p-40">
+        h-40 bg-gradient-to-r from-red-100 to-red-400 text-center p-40
+      </div> <br>
+      <div class="h-40 bg-gradient-to-r from-red-100 via-blue-300 to-red-400 text-center p-40">
+        h-40 bg-gradient-to-r from-red-100 via-blue-300 to-red-400 text-center p-40
+      </div>
 
     
+
+
+      
      <!-- Navigation -->
 
      <div style="text-align: center; border: none;" class="mt-10">
