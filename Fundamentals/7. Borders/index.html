@@ -7,13 +7,70 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Borders</title>
   </head>
-  <body>
+  <body class="p-20">
+
+    <h1 class="text-center font-bold text-2xl mb-5">7. Border & Border Radius</h1>
+
     <!-- Border Width & Colors -->
-    <!-- https://tailwindcss.com/docs/border-width -->
+      <!-- https://tailwindcss.com/docs/border-width -->
+
+       <h1>1. Border Width & Colors</h1>
+       <div class="border-2 border-green-800 flex flex-wrap">
+        <div class="w-96 m-5 p-5 border">border</div>
+        <div class="w-96 m-5 p-5 border border-4 decoration-dotted">border border-4</div>
+        <div class="w-96 m-5 p-5 border-4 border-pink-500">border-4 border-pink-500</div>
+        <div class="w-96 m-5 p-5 border-y-4 border-violet-500">border-y-4 border-violet-500</div>
+        <div class="w-96 m-5 p-5 border-x-4 border-blue-500">border-x-4 border-blue-500</div>
+        <div class="w-96 m-5 p-5 border-t-4 border-teal-500">border-t-4 border-teal-500</div>
+        <div class="w-96 m-5 p-5 border-r-4 border-red-500">border-r-4 border-red-500</div>
+        <div class="w-96 m-5 p-5 border-b-4 border-indigo-500">border-b-4 border-indigo-500</div>
+        <div class="w-96 m-5 p-5 border-l-4 border-lime-500">border-l-4 border-lime-500</div>
+       </div>
+
+
+
+
 
     <!-- Border Radius -->
-    <!-- https://tailwindcss.com/docs/border-radius -->
+      <!-- https://tailwindcss.com/docs/border-radius -->
+
+      <h1 class="mt-10">2. Border Radius</h1>
+      <div class="border-2 border-green-500 flex flex-wrap">
+        <div class="w-96 m-5 p-5 bg-teal-200 rounded">rounded</div>
+        <div class="w-96 m-5 p-5 bg-teal-200 rounded-lg">rounded-lg</div>
+        <div class="w-96 m-5 p-5 bg-teal-200 rounded-xl">rounded-xl</div>
+        <div class="w-96 m-5 p-5 bg-teal-200 rounded-3xl">rounded-3xl</div>
+        <div class="w-96 m-5 p-5 bg-teal-200 rounded-full">rounded-full</div>
+        <div class="w-20 h-20 m-5 bg-sky-400 rounded-full"></div>
+      </div>
+
+
+
+
 
     <!-- Specific Sides -->
+
+      <h1 class="mt-10">3. Border Radius in particular side</h1>
+      <div class="border-2 border-orange-500 flex flex-wrap">
+        <div class="w-96 m-5 p-5 text-center bg-blue-200 rounded-t-full">rounded-t-full</div>
+        <div class="w-96 m-5 p-5 text-center bg-blue-200 rounded-r-full">rounded-r-full</div>
+        <div class="w-96 m-5 p-5 text-center bg-blue-200 rounded-l-full">rounded-l-full</div>
+        <div class="w-96 m-5 p-5 text-center bg-blue-200 rounded-b-full">rounded-b-full</div>
+
+        <div class="w-96 m-5 p-5 text-center bg-pink-200 rounded-tl-full">rounded-tl-full</div>
+        <div class="w-96 m-5 p-5 text-center bg-pink-200 rounded-tr-full">rounded-tr-full</div>
+        <div class="w-96 m-5 p-5 text-center bg-pink-200 rounded-bl-full">rounded-bl-full</div>
+        <div class="w-96 m-5 p-5 text-center bg-pink-200 rounded-br-full">rounded-br-full</div>
+      </div>
+
+
+
+
+      
+     <!-- Navigation -->
+
+     <div style="text-align: center; border: none;" class="mt-10">
+      <a href="../6. Backgrounds Shadows/index.html" style="border: 1px solid;padding: 10px;">⬅️</a>
+      <a href="../8. Filters/index.html" style="border: 1px solid;padding: 10px;">➡️</a>
   </body>
 </html>
