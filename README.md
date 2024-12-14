@@ -1,4 +1,6 @@
-# Learning Tailwind
+# Learning Tailwind CSS
+
+Creator of Tailwind CSS: *Adam Wathan*
 
 
 
