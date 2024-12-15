@@ -192,13 +192,28 @@
 
       <h1 class="mt-20">6. Flex Grow and shrink (i.e flex-xyz)</h1>
       <ul class="flex border-4">
-        <li class="bg-orange-200 ml-5 my-5 p-5 w-64">01</li>
-        <li class="bg-orange-200 ml-5 my-5 p-5 w-64">02</li>
-        <li class="bg-orange-200 ml-5 my-5 p-5 w-64">03</li>
-        <li class="bg-orange-200 ml-5 my-5 p-5 w-64">04</li>
+        <li class="bg-orange-200 ml-5 my-5 p-5 w-64 flex-none">01 (flex-none)</li>
+          <!-- prevents from growing or shrinking -->
+
+        <li class="bg-orange-200 ml-5 my-5 p-5 w-64 flex-initial">02 (flex-initial)</li>
+          <!-- allows to shrink but not grow, taking into account its initial size -->
+
+        <li class="bg-orange-200 ml-5 my-5 p-5 w-64 flex-auto">03(flex-auto)</li>
+          <!-- allows to grow and shrink, taking into account its initial size -->
+
+        <li class="bg-orange-200 ml-5 my-5 p-5 w-64 flex-1">04 (flex-1)</li>
+          <!-- allows to grow and shrink as needed, ignoring its initial size -->
+
         <li class="bg-orange-200 ml-5 my-5 p-5 w-64">05</li>
         <li class="bg-orange-200 ml-5 my-5 p-5 w-64">06</li>
         <li class="bg-orange-200  m-5 my-5 p-5 w-64">07</li>
+      </ul>
+
+      <ul class="border-4 p-5 bg-slate-100 flex flex-col gap-1">
+        <li><strong>flex-none:</strong>    <span class="ml-8"></span> <span>prevents from growing or shrinking</span></li>
+        <li><strong>flex-initial:</strong> <span class="ml-8"></span> <span>shrink but not grow, taking into account its initial size</span></li>
+        <li><strong>flex-auto:</strong>    <span class="ml-10"></span> <span>grow and shrink, taking into account its initial size</span></li>
+        <li><strong>flex-1:</strong>       <span class="ml-16"></span> <span>grow and shrink as needed, ignoring its initial size</span></li>
       </ul>
     
 
