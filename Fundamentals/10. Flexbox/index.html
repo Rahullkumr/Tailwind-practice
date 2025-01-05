@@ -1,229 +1,248 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Flex</title>
-  </head>
-  <body class="p-20">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Flex</title>
+    </head>
+    <body class="p-20">
+        <h1 class="text-center font-bold text-2xl mb-5">10. Flexbox</h1>
 
-    <h1 class="text-center font-bold text-2xl mb-5">10. Flexbox</h1>
+        <!-- https://tailwindcss.com/docs/flex -->
 
-    <!-- https://tailwindcss.com/docs/flex -->
+        <h1>1. Display Flex (i.e flex)</h1>
+        <div class="border-4">
+            <ul class="flex">
+                <li class="bg-pink-300 m-5 p-5">01</li>
+                <li class="bg-pink-300 m-5 p-5">02</li>
+                <li class="bg-pink-300 m-5 p-5">03</li>
+                <li class="bg-pink-300 m-5 p-5">04</li>
+                <li class="bg-pink-300 m-5 p-5">05</li>
+            </ul>
+        </div>
 
-      <h1>1. Display Flex (i.e flex)</h1>
-      <div class="border-4">
-        <ul class="flex">
-          <li class="bg-pink-300 m-5 p-5">01</li>
-          <li class="bg-pink-300 m-5 p-5">02</li>
-          <li class="bg-pink-300 m-5 p-5">03</li>
-          <li class="bg-pink-300 m-5 p-5">04</li>
-          <li class="bg-pink-300 m-5 p-5">05</li>
-        </ul>
-      </div>
+        <!-- https://tailwindcss.com/docs/flex-direction#column -->
 
+        <h1 class="mt-20">2. Flex Direction (i.e flex-col)</h1>
+        <div class="border-4">
+            <ul class="flex flex-col">
+                <li class="bg-red-300 m-5 p-5">01</li>
+                <li class="bg-red-300 m-5 p-5">02</li>
+                <li class="bg-red-300 m-5 p-5">03</li>
+                <li class="bg-red-300 m-5 p-5">04</li>
+                <li class="bg-red-300 m-5 p-5">05</li>
+            </ul>
+        </div>
 
+        <!-- https://tailwindcss.com/docs/justify-content -->
 
-
-
-    <!-- https://tailwindcss.com/docs/flex-direction#column -->
-
-      <h1 class="mt-20">2. Flex Direction (i.e flex-col)</h1>
-      <div class="border-4">
-        <ul class="flex flex-col">
-          <li class="bg-red-300 m-5 p-5">01</li>
-          <li class="bg-red-300 m-5 p-5">02</li>
-          <li class="bg-red-300 m-5 p-5">03</li>
-          <li class="bg-red-300 m-5 p-5">04</li>
-          <li class="bg-red-300 m-5 p-5">05</li>
-        </ul>
-      </div>
-    
-
-
-
-
-    <!-- https://tailwindcss.com/docs/justify-content -->
-
-      <h1 class="mt-20">3. Justify Content (i.e justify-xyz) [main axis pe apply hota hai]</h1>
+        <h1 class="mt-20">
+            3. Justify Content (i.e justify-xyz) [main axis pe apply hota hai]
+        </h1>
 
         <!-- justify-start -->
         <div class="border-4">
-          <h3 class="mt-10 text-center">justify-start</h3>
-          <ul class="flex justify-start border m-1 gap-5">
-            <li class="bg-teal-100 p-5 px-10">01</li>
-            <li class="bg-teal-100 p-5 px-10">02</li>
-            <li class="bg-teal-100 p-5 px-10">03</li>
-            <li class="bg-teal-100 p-5 px-10">04</li>
-            <li class="bg-teal-100 p-5 px-10">05</li>
-          </ul>
+            <h3 class="mt-10 text-center">justify-start</h3>
+            <ul class="flex justify-start border m-1 gap-5">
+                <li class="bg-teal-100 p-5 px-10">01</li>
+                <li class="bg-teal-100 p-5 px-10">02</li>
+                <li class="bg-teal-100 p-5 px-10">03</li>
+                <li class="bg-teal-100 p-5 px-10">04</li>
+                <li class="bg-teal-100 p-5 px-10">05</li>
+            </ul>
 
-          <!-- justify-end -->
-          <h3 class="mt-10 text-center">justify-end</h3>
-          <ul class="flex justify-end border m-1 gap-5">
-            <li class="bg-teal-100 p-5 px-10">01</li>
-            <li class="bg-teal-100 p-5 px-10">02</li>
-            <li class="bg-teal-100 p-5 px-10">03</li>
-            <li class="bg-teal-100 p-5 px-10">04</li>
-            <li class="bg-teal-100 p-5 px-10">05</li>
-          </ul>
+            <!-- justify-end -->
+            <h3 class="mt-10 text-center">justify-end</h3>
+            <ul class="flex justify-end border m-1 gap-5">
+                <li class="bg-teal-100 p-5 px-10">01</li>
+                <li class="bg-teal-100 p-5 px-10">02</li>
+                <li class="bg-teal-100 p-5 px-10">03</li>
+                <li class="bg-teal-100 p-5 px-10">04</li>
+                <li class="bg-teal-100 p-5 px-10">05</li>
+            </ul>
 
-          <!-- justify-center -->
-          <h3 class="mt-10 text-center">justify-center</h3>
-          <ul class="flex justify-center border m-1 gap-5">
-            <li class="bg-teal-100 p-5 px-10">01</li>
-            <li class="bg-teal-100 p-5 px-10">02</li>
-            <li class="bg-teal-100 p-5 px-10">03</li>
-            <li class="bg-teal-100 p-5 px-10">04</li>
-            <li class="bg-teal-100 p-5 px-10">05</li>
-          </ul>
+            <!-- justify-center -->
+            <h3 class="mt-10 text-center">justify-center</h3>
+            <ul class="flex justify-center border m-1 gap-5">
+                <li class="bg-teal-100 p-5 px-10">01</li>
+                <li class="bg-teal-100 p-5 px-10">02</li>
+                <li class="bg-teal-100 p-5 px-10">03</li>
+                <li class="bg-teal-100 p-5 px-10">04</li>
+                <li class="bg-teal-100 p-5 px-10">05</li>
+            </ul>
 
-          <!-- justify-between -->
-          <h3 class="mt-10 text-center">justify-between</h3>
-          <ul class="flex justify-between border m-1 gap-5">
-            <li class="bg-teal-100 p-5 px-10">01</li>
-            <li class="bg-teal-100 p-5 px-10">02</li>
-            <li class="bg-teal-100 p-5 px-10">03</li>
-            <li class="bg-teal-100 p-5 px-10">04</li>
-            <li class="bg-teal-100 p-5 px-10">05</li>
-          </ul>
+            <!-- justify-between -->
+            <h3 class="mt-10 text-center">justify-between</h3>
+            <ul class="flex justify-between border m-1 gap-5">
+                <li class="bg-teal-100 p-5 px-10">01</li>
+                <li class="bg-teal-100 p-5 px-10">02</li>
+                <li class="bg-teal-100 p-5 px-10">03</li>
+                <li class="bg-teal-100 p-5 px-10">04</li>
+                <li class="bg-teal-100 p-5 px-10">05</li>
+            </ul>
 
-          <!-- justify-around -->
-          <h3 class="mt-10 text-center">justify-around</h3>
-          <ul class="flex justify-around border m-1 gap-5">
-            <li class="bg-teal-100 p-5 px-10">01</li>
-            <li class="bg-teal-100 p-5 px-10">02</li>
-            <li class="bg-teal-100 p-5 px-10">03</li>
-            <li class="bg-teal-100 p-5 px-10">04</li>
-            <li class="bg-teal-100 p-5 px-10">05</li>
-          </ul>
+            <!-- justify-around -->
+            <h3 class="mt-10 text-center">justify-around</h3>
+            <ul class="flex justify-around border m-1 gap-5">
+                <li class="bg-teal-100 p-5 px-10">01</li>
+                <li class="bg-teal-100 p-5 px-10">02</li>
+                <li class="bg-teal-100 p-5 px-10">03</li>
+                <li class="bg-teal-100 p-5 px-10">04</li>
+                <li class="bg-teal-100 p-5 px-10">05</li>
+            </ul>
 
-          <!-- justify-evenly -->
-          <h3 class="mt-10 text-center">justify-evenly</h3>
-          <ul class="flex justify-evenly border m-1 gap-5">
-            <li class="bg-teal-100 p-5 px-10">01</li>
-            <li class="bg-teal-100 p-5 px-10">02</li>
-            <li class="bg-teal-100 p-5 px-10">03</li>
-            <li class="bg-teal-100 p-5 px-10">04</li>
-            <li class="bg-teal-100 p-5 px-10">05</li>
-          </ul>
+            <!-- justify-evenly -->
+            <h3 class="mt-10 text-center">justify-evenly</h3>
+            <ul class="flex justify-evenly border m-1 gap-5">
+                <li class="bg-teal-100 p-5 px-10">01</li>
+                <li class="bg-teal-100 p-5 px-10">02</li>
+                <li class="bg-teal-100 p-5 px-10">03</li>
+                <li class="bg-teal-100 p-5 px-10">04</li>
+                <li class="bg-teal-100 p-5 px-10">05</li>
+            </ul>
         </div>
 
+        <!-- https://tailwindcss.com/docs/align-items -->
 
-
-
-
-    <!-- https://tailwindcss.com/docs/align-items -->
-
-      <h1 class="mt-20">4. Align Items (i.e items-xyz) [cross axis pe apply hota hai]</h1>
+        <h1 class="mt-20">
+            4. Align Items (i.e items-xyz) [cross axis pe apply hota hai]
+        </h1>
 
         <div class="border-4">
+            <!-- items-start -->
+            <h3 class="text-center mt-10">items-start</h3>
+            <ul class="flex items-start border mx-1 gap-5 h-[100px]">
+                <li class="bg-indigo-100 py-2 px-10">01</li>
+                <li class="bg-indigo-100 py-8 px-10">02</li>
+                <li class="bg-indigo-100 py-4 px-10">03</li>
+                <li class="bg-indigo-100 py-1 px-10">04</li>
+                <li class="bg-indigo-100 py-9 px-10">05</li>
+            </ul>
 
-          <!-- items-start -->
-          <h3 class="text-center mt-10">items-start</h3>
-          <ul class="flex items-start border mx-1 gap-5 h-[100px]">
-            <li class="bg-indigo-100 py-2 px-10">01</li>
-            <li class="bg-indigo-100 py-8 px-10">02</li>
-            <li class="bg-indigo-100 py-4 px-10">03</li>
-            <li class="bg-indigo-100 py-1 px-10">04</li>
-            <li class="bg-indigo-100 py-9 px-10">05</li>
-          </ul>
-            
-          <!-- items-center -->
+            <!-- items-center -->
             <h3 class="text-center mt-10">items-center</h3>
             <ul class="flex items-center border m-1 gap-5 h-[100px]">
-              <li class="bg-indigo-100 py-2 px-10">01</li>
-              <li class="bg-indigo-100 py-8 px-10">02</li>
-              <li class="bg-indigo-100 py-4 px-10">03</li>
-              <li class="bg-indigo-100 py-1 px-10">04</li>
-              <li class="bg-indigo-100 py-9 px-10">05</li>
+                <li class="bg-indigo-100 py-2 px-10">01</li>
+                <li class="bg-indigo-100 py-8 px-10">02</li>
+                <li class="bg-indigo-100 py-4 px-10">03</li>
+                <li class="bg-indigo-100 py-1 px-10">04</li>
+                <li class="bg-indigo-100 py-9 px-10">05</li>
             </ul>
 
-          <!-- items-end -->
+            <!-- items-end -->
             <h3 class="text-center mt-10">items-end</h3>
             <ul class="flex items-end border mx-1 gap-5 h-[100px]">
-              <li class="bg-indigo-100 py-2 px-10">01</li>
-              <li class="bg-indigo-100 py-8 px-10">02</li>
-              <li class="bg-indigo-100 py-4 px-10">03</li>
-              <li class="bg-indigo-100 py-1 px-10">04</li>
-              <li class="bg-indigo-100 py-9 px-10">05</li>
+                <li class="bg-indigo-100 py-2 px-10">01</li>
+                <li class="bg-indigo-100 py-8 px-10">02</li>
+                <li class="bg-indigo-100 py-4 px-10">03</li>
+                <li class="bg-indigo-100 py-1 px-10">04</li>
+                <li class="bg-indigo-100 py-9 px-10">05</li>
             </ul>
 
-          <!-- items-baseline -->
-          <h3 class="text-center mt-10">items-baseline</h3>
-          <ul class="flex items-baseline border m-1 gap-5 h-[100px]">
-            <li class="bg-indigo-100 py-2 px-10">01</li>
-            <li class="bg-indigo-100 py-8 px-10">02</li>
-            <li class="bg-indigo-100 py-4 px-10">03</li>
-            <li class="bg-indigo-100 py-1 px-10">04</li>
-            <li class="bg-indigo-100 py-9 px-10">05</li>
-          </ul>
+            <!-- items-baseline -->
+            <h3 class="text-center mt-10">items-baseline</h3>
+            <ul class="flex items-baseline border m-1 gap-5 h-[100px]">
+                <li class="bg-indigo-100 py-2 px-10">01</li>
+                <li class="bg-indigo-100 py-8 px-10">02</li>
+                <li class="bg-indigo-100 py-4 px-10">03</li>
+                <li class="bg-indigo-100 py-1 px-10">04</li>
+                <li class="bg-indigo-100 py-9 px-10">05</li>
+            </ul>
 
-          <!-- items-stretch -->
-          <h3 class="text-center mt-10">items-stretch</h3>
-          <ul class="flex items-stretch border m-1 gap-5 h-[100px]">
-            <li class="bg-indigo-100 py-2 px-10">01</li>
-            <li class="bg-indigo-100 py-8 px-10">02</li>
-            <li class="bg-indigo-100 py-4 px-10">03</li>
-            <li class="bg-indigo-100 py-1 px-10">04</li>
-            <li class="bg-indigo-100 py-9 px-10">05</li>
-          </ul>
+            <!-- items-stretch -->
+            <h3 class="text-center mt-10">items-stretch</h3>
+            <ul class="flex items-stretch border m-1 gap-5 h-[100px]">
+                <li class="bg-indigo-100 py-2 px-10">01</li>
+                <li class="bg-indigo-100 py-8 px-10">02</li>
+                <li class="bg-indigo-100 py-4 px-10">03</li>
+                <li class="bg-indigo-100 py-1 px-10">04</li>
+                <li class="bg-indigo-100 py-9 px-10">05</li>
+            </ul>
         </div>
 
+        <!-- https://tailwindcss.com/docs/order -->
 
+        <h1 class="mt-20">
+            5. Order (by default, order is 0 for all elements) [jitna bada order
+            utna bad me ayga]
+        </h1>
+        <ul class="flex items-stretch border-4 gap-5 mt-2">
+            <li class="bg-yellow-100 m-5 p-10">01</li>
+            <li class="bg-yellow-100 m-5 p-10 order-7">02 (order-7)</li>
+            <li class="bg-yellow-100 m-5 p-10">03</li>
+            <li class="bg-yellow-100 m-5 p-10 order-3">04 (order-3)</li>
+            <li class="bg-yellow-100 m-5 p-10">05</li>
+        </ul>
 
+        <!-- Grow and shrink -->
+        <!-- https://tailwindcss.com/docs/flex-shrink -->
 
-    <!-- https://tailwindcss.com/docs/order -->
+        <h1 class="mt-20">6. Flex Grow and shrink (i.e flex-xyz)</h1>
+        <ul class="flex border-4">
+            <li class="bg-orange-200 ml-5 my-5 p-5 w-64 flex-none">
+                01 (flex-none)
+            </li>
+            <!-- prevents from growing or shrinking -->
 
-      <h1 class="mt-20">5. Order (by default, order is 0 for all elements) [jitna bada order utna bad me ayga]</h1>
-      <ul class="flex items-stretch border-4 gap-5 mt-2">
-        <li class="bg-yellow-100 m-5 p-10">01</li>
-        <li class="bg-yellow-100 m-5 p-10 order-7">02 (order-7)</li>
-        <li class="bg-yellow-100 m-5 p-10">03</li>
-        <li class="bg-yellow-100 m-5 p-10 order-3">04  (order-3)</li>
-        <li class="bg-yellow-100 m-5 p-10">05</li>
-      </ul>
-    
+            <li class="bg-orange-200 ml-5 my-5 p-5 w-64 flex-initial">
+                02 (flex-initial)
+            </li>
+            <!-- allows to shrink but not grow, taking into account its initial size -->
 
-    <!-- Grow and shrink -->
-      <!-- https://tailwindcss.com/docs/flex-shrink -->
+            <li class="bg-orange-200 ml-5 my-5 p-5 w-64 flex-auto">
+                03(flex-auto)
+            </li>
+            <!-- allows to grow and shrink, taking into account its initial size -->
 
-      <h1 class="mt-20">6. Flex Grow and shrink (i.e flex-xyz)</h1>
-      <ul class="flex border-4">
-        <li class="bg-orange-200 ml-5 my-5 p-5 w-64 flex-none">01 (flex-none)</li>
-          <!-- prevents from growing or shrinking -->
+            <li class="bg-orange-200 ml-5 my-5 p-5 w-64 flex-1">04 (flex-1)</li>
+            <!-- allows to grow and shrink as needed, ignoring its initial size -->
 
-        <li class="bg-orange-200 ml-5 my-5 p-5 w-64 flex-initial">02 (flex-initial)</li>
-          <!-- allows to shrink but not grow, taking into account its initial size -->
+            <li class="bg-orange-200 ml-5 my-5 p-5 w-64">05</li>
+            <li class="bg-orange-200 ml-5 my-5 p-5 w-64">06</li>
+            <li class="bg-orange-200 m-5 my-5 p-5 w-64">07</li>
+        </ul>
 
-        <li class="bg-orange-200 ml-5 my-5 p-5 w-64 flex-auto">03(flex-auto)</li>
-          <!-- allows to grow and shrink, taking into account its initial size -->
+        <ul class="border-4 p-5 bg-slate-100 flex flex-col gap-1">
+            <li>
+                <strong>flex-none:</strong> <span class="ml-8"></span>
+                <span>prevents from growing or shrinking</span>
+            </li>
+            <li>
+                <strong>flex-initial:</strong> <span class="ml-8"></span>
+                <span
+                    >shrink but not grow, taking into account its initial
+                    size</span
+                >
+            </li>
+            <li>
+                <strong>flex-auto:</strong> <span class="ml-10"></span>
+                <span
+                    >grow and shrink, taking into account its initial size</span
+                >
+            </li>
+            <li>
+                <strong>flex-1:</strong> <span class="ml-16"></span>
+                <span
+                    >grow and shrink as needed, ignoring its initial size</span
+                >
+            </li>
+        </ul>
 
-        <li class="bg-orange-200 ml-5 my-5 p-5 w-64 flex-1">04 (flex-1)</li>
-          <!-- allows to grow and shrink as needed, ignoring its initial size -->
+        <!-- Navigation -->
 
-        <li class="bg-orange-200 ml-5 my-5 p-5 w-64">05</li>
-        <li class="bg-orange-200 ml-5 my-5 p-5 w-64">06</li>
-        <li class="bg-orange-200  m-5 my-5 p-5 w-64">07</li>
-      </ul>
-
-      <ul class="border-4 p-5 bg-slate-100 flex flex-col gap-1">
-        <li><strong>flex-none:</strong>    <span class="ml-8"></span> <span>prevents from growing or shrinking</span></li>
-        <li><strong>flex-initial:</strong> <span class="ml-8"></span> <span>shrink but not grow, taking into account its initial size</span></li>
-        <li><strong>flex-auto:</strong>    <span class="ml-10"></span> <span>grow and shrink, taking into account its initial size</span></li>
-        <li><strong>flex-1:</strong>       <span class="ml-16"></span> <span>grow and shrink as needed, ignoring its initial size</span></li>
-      </ul>
-    
-
-
-
-     <!-- Navigation -->
-
-     <div style="text-align: center; border: none;" class="mt-10">
-      <a href="../9. Breakpoints/index.html" style="border: 1px solid;padding: 10px;">⬅️</a>
-      <a href="../11. Grid/index.html" style="border: 1px solid;padding: 10px;">➡️</a>
-    </div>
-  </body>
+        <div style="text-align: center; border: none" class="mt-10">
+            <a
+                href="../9. Breakpoints/index.html"
+                style="border: 1px solid; padding: 10px"
+                >⬅️</a
+            >
+            <a
+                href="../11. Grid/index.html"
+                style="border: 1px solid; padding: 10px"
+                >➡️</a
+            >
+        </div>
+    </body>
 </html>
