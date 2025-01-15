@@ -10,26 +10,55 @@
   <body class="p-20">
 
     <h1 class="text-center font-bold text-2xl mb-5">12. Transform & Transition</h1>
-    <!-- No Transition -->
 
+
+
+    <!-- No Transition -->
     <h1 class="text-md p-2">1. p-2 text-white bg-blue-500 hover:bg-blue-700</h1>
     <button class="ml-10 p-2 text-white bg-blue-500 hover:bg-blue-700">Normal button</button>
 
+
+
     <!-- Transition -->
       <!-- 1. https://tailwindcss.com/docs/transition-property -->
-
-      <h1 class="text-md p-2">2. ml-10 p-3 bg-blue-500 transition hover:bg-teal-500 duration-300 ease-in-out delay-150 text-white</h1>
-      <button class="ml-10 p-3 bg-blue-500 transition hover:bg-teal-500 duration-300 ease-in-out delay-150 text-white">With Transition</button>
-
-
       <!-- 2. https://tailwindcss.com/docs/transition-duration -->
       <!-- 3. https://tailwindcss.com/docs/transition-timing-function -->
       <!-- 4. https://tailwindcss.com/docs/transition-delay -->
-      <!-- 5. https://tailwindcss.com/docs/animation -->
+        <h1 class="text-md p-2 mt-8">2. ml-10 p-3 bg-blue-500 transition hover:bg-teal-500 duration-300 ease-in-out delay-150 text-white</h1>
+        <button class="ml-10 p-3 bg-blue-500 transition hover:bg-teal-500 duration-300 ease-in-out delay-150 text-white">With Transition</button>
 
-    <!-- Transition & Transform -->
+
+
+    <!-- Transform -->
+      <h1 class="text-md p-2 mt-8">3. ml-10 p-3 bg-blue-500 text-white transition ease-in-out delay-150 duration-800 hover:translate-x-8 hover:scale-110 hover:bg-teal-500</h1>
+      <button class="ml-10 p-3 bg-blue-500 text-white transition ease-in-out delay-150 duration-800 hover:translate-x-8 hover:scale-110 hover:bg-teal-500">Transformation: translate & scale</button>
+
+
+
+      <h1 class="text-md p-2 mt-8">4. ml-10 p-3 bg-blue-500 text-white transition duration-800 hover:rotate-180</h1>
+      <button class="ml-10 p-3 bg-blue-500 text-white transition duration-800 hover:rotate-180">Transformation: rotate</button>
+      
+
+
+      <h1 class="text-md p-2 mt-8">4. ml-10 p-3 bg-blue-500 text-white transition duration-800 hover:rotate-180</h1>
+      <button class="ml-10 p-3 bg-blue-500 text-white transition duration-800 hover:skew-x-12">Transformation: skew</button>
+
+
 
     <!-- Animation -->
+
+      <!-- 5. https://tailwindcss.com/docs/animation -->
+      <h1 class="text-center font-bold text-2xl my-10">Animation</h1>
+        <div class="flex justify-between">
+          <div class="bg-green-400 p-8 m-4 animate-pulse">pulse</div>
+          <div class="bg-green-400 p-8 m-4 animate-ping">ping</div>
+          <div class="bg-green-400 p-8 m-4 animate-spin">spin</div>
+          <div class="bg-green-400 p-8 m-4 animate-bounce">bounce</div>
+        </div> <br><br>
+        <p>1. bg-green-400 p-8 m-4 animate-pulse</p>
+        <p>2. bg-green-400 p-8 m-4 animate-ping</p>
+        <p>3. bg-green-400 p-8 m-4 animate-spin</p>
+        <p>4. bg-green-400 p-8 m-4 animate-bounce</p>
 
     
     
